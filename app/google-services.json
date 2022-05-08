@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46418163934",
+    "project_id": "vizora-bejelento",
+    "storage_bucket": "vizora-bejelento.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46418163934:android:c8fc752aed39d795326a4f",
+        "android_client_info": {
+          "package_name": "com.example.vizora_bejelento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46418163934-bq28mn36oicvvg3rnubadmvnn89epaiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH9fTnbLJ1O3RVr5YEv1HywGDMFReJqo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46418163934-bq28mn36oicvvg3rnubadmvnn89epaiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
