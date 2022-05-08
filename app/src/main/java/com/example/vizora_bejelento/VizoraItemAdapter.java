@@ -11,35 +11,38 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.vizora_bejelento.VizoraItem;
+import com.example.vizora_bejelento.fooldalActivity;
 
+import java.lang.annotation.Annotation;
 import java.util.ArrayList;
+import java.util.List;
 
-public class ShopingItemAdapter extends RecyclerView.Adapter<ShopingItemAdapter.ViewHolder> implements Filterable {
+public class VizoraItemAdapter extends RecyclerView.Adapter<VizoraItemAdapter.ViewHolder> implements Filterable {
     // Member variables.
     private ArrayList<VizoraItem> mShopingItemData = new ArrayList<>();
     private ArrayList<VizoraItem> mShopingItemDataAll = new ArrayList<>();
     private Context mContext;
     private int lastPosition = -1;
 
-    ShopingItemAdapter(Context context, ArrayList<VizoraItem> itemsData) {
+    VizoraItemAdapter(Context context, ArrayList<VizoraItem> itemsData) {
         this.mShopingItemData = itemsData;
         this.mShopingItemDataAll = itemsData;
         this.mContext = context;
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(
+    public VizoraItemAdapter.ViewHolder onCreateViewHolder(
             ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(mContext)
                 .inflate(R.layout.list_item, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(ShopingItemAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(VizoraItemAdapter.ViewHolder holder, int position) {
         // Get current sport.
         VizoraItem currentItem = mShopingItemData.get(position);
 
